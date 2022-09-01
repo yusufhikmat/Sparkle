@@ -1,0 +1,282 @@
+@import "css/index.css";
+.hero_background{
+    background-image: url("contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width:100%;
+
+}
+.text_content{
+    text-align: center;
+    padding: 10%
+}
+.text_content h3{
+    font-size: 50px;
+    font-weight: 800;
+    color:#262626;
+}
+.text_content ul{
+    display:flex;
+    margin-left: 40%;
+}
+.text_content ul li{
+    list-style-type: none;
+    padding:5px;
+}
+.text_content ul li a{
+    text-decoration: none;
+    color:black;
+}
+.text_content ul li a.blue{
+    color:blue;
+}
+/* contact info container*/
+.contact_info{
+    padding: 0% 8%;
+    display:flex;
+    margin-bottom: 7%;
+
+}
+
+.address_info{
+    background-color: white;
+    margin:15px;
+    padding:50px;
+    border-radius: 5px;
+    
+}
+.address_info h3{
+    margin-top: 5%;
+    color: #262626;
+    font-weight: 600;
+}
+.address_info p{
+    color:#a3a1a1;
+}
+.address_info i.fa{
+    background-color: #f3f4f1;
+    text-align: center;
+    height:30px;
+    width:35px;
+    border-radius: 25%;
+    padding: 10px;
+    font-size: 18px;
+    margin:8px;
+    color:#a3a1a1;
+}
+.message_info{ 
+    margin:15px;
+    text-align: left;
+}
+form input{
+    border: none;
+    border-radius: 5px;
+}
+input[type='name'],
+input[type='email']{
+    font-size: 16px;
+    padding:10px 0px;
+    width:48%
+}
+form input[type='name']{
+    margin-right: 5px;
+}
+input[type='email']{
+    margin-left: 18px;
+}
+input[type='subject']{ 
+    padding:10px 0px;
+    margin:10px 0px;
+    width:100%;
+    font-size: 16px;
+    
+}
+form.message{
+    font-size: 16px;
+    border:none;
+    margin-top:5px;
+}
+
+.btnmessage{
+    width:100%;
+    background-color: rgb(48, 101, 184);
+    border-radius: 5px;
+    border:none;
+    color:white;
+    padding:15px 0px;
+    font-size: 14px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+.btnmessage:hover{
+    background-color: navy;
+}
+/* empty container*/
+.google_map_container{
+    background-color: white;
+    height:600px;
+}
+iframe{
+    width:100%;
+    height:600px;
+
+}
+@media screen and (max-width:480px) {
+    html,body{
+        max-width: 100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+    .col-4,
+    .col-8{
+        width:100%
+    }
+    div.pre_header{
+        display:block;
+        width:100%;
+        padding:5px 10px;
+        margin:0;
+        padding-top: 10px;
+    }
+    div.pre_header div.webname{
+        font-size: 16px;
+        padding-left: 0;
+    }
+    div.pre_header .btnbuy{
+        padding:5px 10px;
+        font-size: 14px;
+    }
+    .postheader{
+        padding:0;
+
+    }
+    img.logo{
+        font-size: 30px;
+        padding:0;
+        height:50px;
+        width:100px;
+    }
+    .fontImages{
+        display:none;
+    }
+    div.servicebtn{
+       display:none;
+    }
+    .navbar{
+        display:none;
+    }
+    .hero_background{
+        height:300px;
+        width:100%;
+    }
+    .text_content{
+        padding:20%;
+    }
+    .text_content h3{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .text_content ul{
+        margin: 0px;
+        text-align: center;
+    }
+    
+    header h3.header{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 2.5rem;
+    }
+    header p.header{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    /* contact_info*/
+    .contact_info{
+        padding:0px;
+        margin:0px 10px;
+        display:block;
+    }
+    .address_info{
+        margin:0;
+    }
+    .message_info{
+       margin:0;
+       text-align: center;
+    }
+    input[type='name'],
+    input[type='email'],
+    input[type='subject']{
+    width:100%;
+    margin:10px 0px;
+    }
+    form input[type='name']{
+        margin-right: 0px;
+    }
+    input[type='email']{
+        margin-left: 0px;
+    }
+
+    textarea.message{
+        font-size: 16px;
+        border:none;
+        margin-top:5px;
+        width:100%;
+    }
+    
+
+    /*sub_footer*/
+    .sub_footer{
+        display:block;
+        padding:8% 3%;
+
+    }
+    .company_info{
+        width:100%;
+        margin:0;
+        padding:0px;
+    }
+    .company_info ul li i{
+        color:white;
+        margin-right: 0px;
+    }
+    .company_info h3{
+        font-size: 16px;
+        padding-top: 10%;
+        font-weight: 400;
+    }
+    .company_info p{
+        font-size: 14px;
+    }
+    .company_info ul li{
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .company_info ul li i{
+        margin-right:10px;
+    }
+    ul li.latest_post{
+        font-size: 16px;
+    }
+    .company_info input{
+        width:100%;
+    }
+    /*footer*/
+    .footer_content{
+        padding:0px;
+        text-align: center;
+    }
+    .footer_content > div:not(:nth-child(2)){
+        display:none;
+        padding:0;
+    }
+    .footer_info{
+        display:block;
+        width:100%;
+        margin:0;
+    }
+    .footer_info p{
+        padding: 0px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,47 @@
+@import "css/index.css";
+.hero_background{
+    background-image: url("contact.jpg");
+    height:620px;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.text_content{
+    display:flex;
+}
+.coming_soon p{
+    font-size: 60px;
+    font-weight: 800;
+    margin:3% 0%;
+}
+.figure h3{
+    color:#3065b8;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.text_content{
+    padding: 2% 0%;
+}
+.btnemail{
+    padding:13px 10%;
+    border:none;
+    background-color: white;
+}
+.btnsubscribe{
+    background-color: #3065b8;
+    padding:13px 50px;
+    border:none;
+    border-radius: 0px 5px 5px 0px;
+    color:white;
+    text-transform: uppercase;
+}
+i.fa{
+    margin: 30px 20px 0px 0px;
+    height:50px;
+    width:50px;
+    font-size: 20px;
+   
+
+}

@@ -1,0 +1,107 @@
+@import "css/index.css";
+@import "css/contact.css";
+
+/* company staffs*/
+
+header h3.small_header{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+header p.small_header{
+    margin:0px 10px;
+}
+.company_container{
+    position:relative;
+    height:600px;
+}
+.company_staffs{
+    background-color: white;
+    height:600px;
+    display:flex;
+    position:absolute;
+    width:100%;
+    padding:0px 5%;
+}
+.staff{
+    border-radius: 5px;
+    margin:20px 10px;
+    border:none;
+    text-align: center;
+    position: relative;
+}
+.staff_info{
+    position:absolute;
+}
+
+.staff_image{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.staffprev{
+    position:absolute;
+    left:90px;
+    top:40%;
+    padding:10px;
+
+}
+.staffnext{
+    position:absolute;
+    right:90px;
+    top:40%;
+    padding:10px;
+}
+
+/**/
+.best_house_cleaning{
+    height:250px;
+    background-color: #3065b8;
+    padding:5% 8%;
+    display:flex;
+}
+/* image slider with text and star emoji */
+.slider{
+    background-color: aqua;
+    height:500px;
+}
+/*container with a background of blue  */
+.netherlands{
+    color:white;
+}
+.netherlands h3{
+    font-size: 35px;
+}
+.netherlands p{
+    font-size: 20px;
+}
+.netherlands button{
+    padding:15px 30px;
+    background-color: black;
+    color:white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border:none;
+    border-radius: 5px;
+    margin:35px;
+}
+/*mobile responsivenss*/
+@media screen and (max-width:480){
+    html,body{
+        max-width: 100%;
+        height:100%;
+        overflow-x: hidden;
+    }
+    .company_staffs{
+        width:300%;
+
+    }
+    .staff{
+        width:100%;
+    }
+    .staffprev{
+        left:25px;
+    }
+    .staffnext{
+        right:25px
+    }
+}

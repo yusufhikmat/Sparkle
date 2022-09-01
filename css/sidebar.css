@@ -1,0 +1,77 @@
+@import "css/index.css";
+@import "css/contact.css";
+.sidebar_container{
+    display:grid;
+    grid-template-columns: 35% 65%;
+    padding:7% 5%;
+    background-color: #fff;
+
+}
+.sidebar{
+    padding:0px 30px;
+    grid-row: auto;
+}
+input[type='search']{
+    background-color: #ccc;
+    height:50px;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+}
+.popular_post{
+    padding: 50px 0px 5px 0px;
+    text-transform: uppercase;
+    
+}
+
+.images_texts > div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding:15px 0px;
+    text-transform: capitalize;
+}
+.small_images{
+    height:80px;
+    width:80px;
+    border-radius: 5px;
+    border:none;
+}
+.italisized_date{
+    font-style: italic;
+}
+
+/* categories*/
+table{
+    empty-cells: show;
+}
+ i.fa{
+    padding:5px;
+}
+  .main_container > div{
+    display:grid;
+    padding:0px 10px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.mainbar_content{
+    padding:0px 10px;
+}
+.mainbar_heading:hover{
+    color:#3065b8;
+}
+
+.mainbar_paragraph{
+    padding:20px 0px;
+}
+
+.mainbar_img{
+    width:365px;
+    border-radius: 5px;
+}
+.main_admin{
+    display:flex;padding-bottom: 50px;
+
+}
+.main_admin_paragraph{
+    padding: 15px 0px 0px 10px;
+}
