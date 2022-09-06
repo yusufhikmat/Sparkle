@@ -1,28 +1,38 @@
 @import "css/index.css";
+
 .hero_background{
     background-image: url("contact.jpg");
-    height:620px;
+    height:650px;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-}
-.text_content{
-    display:flex;
 }
 .coming_soon p{
     font-size: 60px;
     font-weight: 800;
     margin:3% 0%;
 }
-.figure h3{
+.figure{
+   display:flex;
+   margin-left: 38%;
+   padding-bottom:40px;
+  
+}
+.time_col{
+    padding:0px 20px;
+}
+.time_col .p_time{
     color:#3065b8;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 900;
 
 }
 .text_content{
-    padding: 2% 0%;
+    padding-bottom: 50px;
+}
+.btn_btn{
+    padding-bottom: 20px;
 }
 .btnemail{
     padding:13px 10%;
@@ -42,6 +52,26 @@ i.fa{
     height:50px;
     width:50px;
     font-size: 20px;
-   
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    text-align: center;
 
+}
+@media screen and (max-width:680px){
+    .hero_background{
+        padding:0px 20px;
+    }
+    .coming_soon p{
+        font-size: 40px;
+    }
+    .figure{
+        margin-left: 0%;
+    }
+    .btnemail{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .btnsubscribe{
+        width:100%;
+    }
 }

@@ -1,2 +1,85 @@
 @import "css/index.css";
 @import "css/contact.css";
+@import "css/sidebar.css";
+
+.grid_cartelogue{
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap:2rem;
+   text-align: center;
+   padding:0px 20px 0px 5px;
+}
+
+.cart_image img{
+   height: 100%;
+   width:100%;
+}
+.overlay_cart{
+   position: relative;
+}
+.btn_cart{
+   position: absolute;
+   
+   
+}
+.btn_cart button{
+   position:absolute;
+   text-transform: capitalize;
+   background-color: #3065b8;
+   position: absolute;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.overlay_Btn{
+   background-color: rgba(0,0,0,0.6);
+   position:absolute;
+   width:100%;
+   top:0;
+  bottom: 0;
+  text-align: center;
+  color:white;
+  transition: .5s ease;
+  overflow: hidden;
+  height:0;
+  margin:0;
+  padding:0;
+}
+.overlay_cart:hover .overlay_btn{
+   height:100%;
+}
+.cart_details{
+   margin:20px 0px;
+}
+.cart_details h3{
+   text-transform: capitalize;
+
+}
+.cart_details p{
+   color: #3065b8;
+   font-size: 20px;
+   font-weight: 600;
+}
+.catelogue_btn{
+   text-align: center;
+   display: block;
+   padding-top:30px;
+}
+.catelogue_btn button{
+   padding:20px;
+   border:none;
+   border-radius: 5px;
+   margin:5px;
+   font-size: 16px;
+}
+.catelogue_btn button:hover{
+   background-color:#3065b8;
+}
+@media screen and (max-width:680px){
+   .grid_cartelogue{
+      display:block;
+   }
+   .catelogue{
+      margin:0px 10px;
+      
+   }
+}

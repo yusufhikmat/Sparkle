@@ -10,18 +10,6 @@
     </head>
     <body>
         <div class="container">
-            <div class="row pre_header">
-                <div class="col-12">
-                <div class="webname">
-                    <p>envato<span>market</span></p>
-                </div>
-                <div class="btn">
-                    <button class="btnbuy">Buy now</button>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="postheader">
                 <div class="col-5">
@@ -129,11 +117,13 @@
                  </div>
             </div>
         </div>
-    <header>
+        <div class="second_header">
+        <header>
         <h3 class="header">Why choose HomeCleaner?</h3>
         <p class="header">We know you have a lot of choices when it comes to choosing who to clean</p>
         <p class="header">your home, here are some reasons to consider CleanPro.</p>
-    </header>
+         </header>
+        </div>
     <div class="container">
         <div class="row content">
         <div class="col-4 content_col">
@@ -223,55 +213,121 @@
         </div>
     <div class="container">
         <div class="company_container">
-        <div class="row company_staffs" id="companyStaffs">
+        <div class="company_staffs" id="companyStaffs">
             <div class="col-4 staff">
                 <div class="staff_info">
+                <div class="social_info">
                 <div class="staff_image">
                     <img src="images/staff1.jpg">
                 </div>
-           
+                <div class="staff_overlay">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
             <div class="staff_datails">
                 <h3>Elizabeth Dreissen</h3>
                 <p><i>General Cleaner</i></p>
             </div>
-         </div>
+        </div>
          </div>
             <div class="col-4 staff">
                 <div class="staff_info">
+                    <div class="social_info">
                 <div class="staff_image">
                     <img src="images/staff2.jpg">
                 </div>
+                <div class="staff_overlay">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                </div>
                 <div class="staff_datails">
                     <h3>Elizabeth Dreissen</h3>
-                <p><i>General Cleaner</i></p>
+                    <p><i>General Cleaner</i></p>
                 </div>
             </div>
             </div>
             <div class="col-4 staff">
                 <div class="staff_info">
+                    <div class="social_info">
                 <div class="staff_image">
                     <img src="images/staff3.jpg">
                 </div>
+                <div class="staff_overlay">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                </div>
                 <div class="staff_datails">
                     <h3>Elizabeth Dreissen</h3>
-                <p><i>General Cleaner</i></p>
+                    <p><i>General Cleaner</i></p>
                 </div>
             </div>
             </div>
             </div>
             <div class="staffbtn">
-                <button class="staffprev" onclick="staffprevy">a</button>
-                <button class="staffnext" onclick="staffnexty">b</button>
+                <button class="staffprev" onclick="staffprev()"><</button>
+                <button class="staffnext" onclick="staffnext()">></button>
             </div>
         </div>
     </div>
+
     <header>
         <h3 class="header">What Clients Say About Us</h3>
         <p class="header">We rigorously vet all of our Cleaners, please see a selection of quotes from our</p>
         <p class="header">Channel Partners below.</p>
     </header>
     <div class="container">
-       <div class="slider"></div>
+        <div class="review_container">
+            <div class="review_row">
+                <div class="col-6 customers_review">
+                    <div class="review_content">
+                        <div class="user_info">
+                        <img src="images/staff6.png" alt="">
+                        <p><b>Yusuph Hikmah</b></p>
+                        <p><i>Physician</i></p>
+                    </div>
+                    <div class="user_review">
+                        <p>It is a long established fact that a reader will be distracted
+                             by the readable content of a page when looking at its layout
+                             . The point of using Lorem Ipsum is that it has a more-or-less
+                              normal distribution of letters, as opposed to using 'Content here,
+                               content here', making it look like readable English. Many 
+                               desktop publishing packages and web page editors now use Lorem
+                        </p>
+                        <p class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-6 customers_review">
+                    <div class="review_content">
+                        <div class="user_info">
+                        <img src="images/staff6.png" alt="">
+                        <p><b>Yusuph Hikmah</b></p>
+                        <p><i>Physician</i></p>
+                    </div>
+                    <div class="user_review">
+                        <p>It is a long established fact that a reader will be distracted
+                             by the readable content of a page when looking at its layout
+                             . The point of using Lorem Ipsum is that it has a more-or-less
+                              normal distribution of letters, as opposed to using 'Content here,
+                               content here', making it look like readable English. Many 
+                               desktop publishing packages and web page editors now use Lorem. </p>
+                        <p class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="review_radio">
+                    <input type="radio" name="review"class="" onclick="">
+                    <input type="radio" name="review" class="" onclick="">
+                </div>
+            </div>
+            
+        </div>
     </div>
     <div class="container">
         <div class="row best_house_cleaning">
@@ -284,18 +340,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="review_container">
-            <div class="row review_row">
-                <div class="col-6 customers_review">
-                    <div class="review_content"></div>
-                </div>
-                <div class="col-6">
-                    <div class=""></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container">
         <div class="row sub_footer">
          <div class="col-4 company_info">
@@ -364,13 +409,14 @@
         </div>
     </div>
     </div>
-    <script>
+
+ <script>
         var staffs = document.getElementById("companyStaffs");
         var staffSlide = staffs.getElementsByClassName("staff");
-        function staffnexty(){
+        function staffnext(){
             staffs.append(staffSlide[0]);
         }
-        function staffprevy(){
+        function staffprev(){
             staffs.prepend(staffSlide[staffSlide.length - 1]);
         }
     </script>

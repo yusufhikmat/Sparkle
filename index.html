@@ -9,18 +9,7 @@
     
     </head>
     <body>
-        <div class="container">
-            <div class="row pre_header">
-                <div class="col-12">
-                <div class="webname">
-                    <p>envato<span>market</span></p>
-                </div>
-                <div class="btn">
-                    <button class="btnbuy">Buy now</button>
-                </div>
-            </div>
-        </div>
-        </div>
+        
         <div class="container">
             <div class="row">
                 <div class="postheader">
@@ -117,17 +106,17 @@
                 <div class="first_container_content">
                 <div class="slide_container active">
                     <div class="slide">
-                        <div class=" col-5 content_box">
-                            <div class="dunno">
+                        <div class="content_box ">
+                            <div class="yellow_circle">
                                 <img src="images/discount.png">
-                                </div>
+                            </div>
                                 <div class="first_order">
                                     <p> for first</p>
                                     <P>order</P>
                                 </div>
                                 
                                 <div class="discount">
-                                    <h3>&#9733;&#9733;&#9733;</h3>
+                                    <img src="images/star.png">
                                     <h3>30% <small>off</small></h3>
                                     <h3>discount</h3>
                                     </div>
@@ -136,45 +125,13 @@
                                 </div>
                                 
                             </div>
-                            
-                            <div class=" col-7 content_box">
-                                <div class="image_box">
-                                <img src="images/remove.png" class="image1">
-                                </div>                               
-                            </div>
                     </div>
                 </div>
-                <div class="slide_container">
-                    <div class="slide">
-                        <div class=" col-7 content_box">
-                            <div class="slide2_image">
-                                <img src="images/bg2-removebg-preview.png">
-                            </div>
-                         </div>
-                         <div class="col-5 content_box">
-                            <div class="shape">
-                            <div class="circle"></div>
-                            <div class="square_box"></div>
-                        </div>
-                            <div class="second_box">
-                                <P>Best</P>
-                                <p>Cleaning</p>
-                                <p class="paragraph_service">Service</p>
-                            </div>
-                            <div class="negative_discount">
-                                <h3>-30% discount</h3>
-                                <p class="first_cleaning">for first cleaning your place</p>
-                                <P class="star_rating">&#9733;&#9733;&#9733;</P>
-                                <button>book online</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                
                 <div class="slide_container">
                     <div class="slide">
                         
-                        <div class=" col-8 content_box">
+                        <div class="content_box">
                         
                             <div class="third_box">
                                 <h3 class="cleaning_space"> Cleaning spaces</h3>
@@ -183,12 +140,6 @@
                                 <p>the highest quality service</p>
                                 <button class="btnblack">contact us</button>
                                 <button class="btnblue">calculator</button>
-                            </div>
-                            </div>
-                           <div class="col-4 content_box">
-                            <div class="slide3_image">
-                                <img src="images/remove2.png">
-                                                          
                             </div>
                         </div>
                     </div>
@@ -269,16 +220,7 @@
                     
                 </div>
             
-                <script>
-                    var clean= document.getElementById("homeCleaningCards");
-                    var item = clean.getElementsByClassName("main_card");
-                    function after(){
-                        clean.append(item[0]);
-                    }
-                    function before(){
-                        clean.prepend(item[item.length - 1]);
-                    }
-                </script>
+                
             </div>
             <div class="second_header">
             <header>
@@ -298,7 +240,7 @@
                                 <h2>Professional and Secure</h2>
                                 <p>No one steps foot on your property until they have</p>
                                 <p>been background checked, drug screened, and</p>
-                                <p>work-history verified.</p>                           </p>
+                                <p>work-history verified.</p>                          
                             
                             </div>
                             <div class="info_right">
@@ -407,22 +349,13 @@
                     
                 </div>
                 <div class="col-3 four_images_btn">
-                    <button class="previous" onclick="previouser()">b</button>
-                    <button class="next" onclick="nexter()">a</button>
+                    <button class="previous" onclick="previouser()"><</button>
+                    <button class="next" onclick="nexter()">></button>
                 </div>
             </div>
             
         </div>
-        <script>
-            var imageSlider = document.getElementById("imageSlider");
-            var fourImages = imageSlider.getElementsByClassName("four_images");
-            function nexter(){
-                imageSlider.append(fourImages[0]);
-            }
-            function previouser(){
-                imageSlider.prepend(fourImages[fourImages.length - 1]);
-            }
-        </script>
+        
         <div class="container overlay_background">
             <div class="overlay">
                 <div class="row completed_project">
@@ -630,21 +563,12 @@
        </div>
        
        <div class="pricebtn">
-        <button class="previousbtn" onclick="btnprev()">b</button>
-        <button class="nextbtn" onclick="btnnext()">a</button>
+        <button class="previousbtn" onclick="btnprev()"> < </button>
+        <button class="nextbtn" onclick="btnnext()"> > </button>
        </div>
        </div>
        </div>
-       <script>
-        var service = document.getElementById("servicePrice");
-        var serviceBox = service.getElementsByClassName("prices");
-        function btnnext(){
-            service.append(serviceBox[0]);
-        }
-        function btnprev(){
-            service.prepend(serviceBox[serviceBox.length - 1]);
-        }
-       </script>
+      
        
        <div class="second_header">
        <header>
@@ -713,20 +637,11 @@
             
             </div>
             <div class="btnrules">
-                <button class="prv" onclick="prv() ">b</button>
-                <button class="nxt" onclick="nxt()">a</button>
+                <button class="prv" onclick="prv() "> < </button>
+                <button class="nxt" onclick="nxt()"> > </button>
                </div>
     </div>
-    <script>
-        var review = document.getElementById("reviewSlider");
-        var contentBox = review.getElementsByClassName("cleaning_rules");
-        function nxt(){
-            review.append(contentBox[0]);
-        }
-        function prv(){
-            review.prepend(contentBox[contentBox.length - 1]);
-        }
-    </script>
+   
 
     <div class="container">
         <div class="row sub_footer">
@@ -813,7 +728,28 @@
     slides[index].classList.add('active');
     }
     </script>
-
+    //home cleaning card
+    <script>
+        var clean= document.getElementById("homeCleaningCards");
+        var item = clean.getElementsByClassName("main_card");
+        function after(){
+            clean.append(item[0]);
+        }
+        function before(){
+            clean.prepend(item[item.length - 1]);
+        }
+    </script>
+    /* imageslider*/
+    <script>
+        var imageSlider = document.getElementById("imageSlider");
+        var fourImages = imageSlider.getElementsByClassName("four_images");
+        function nexter(){
+            imageSlider.append(fourImages[0]);
+        }
+        function previouser(){
+            imageSlider.prepend(fourImages[fourImages.length - 1]);
+        }
+    </script>
     <script>
         /* grid card slider*/
 let cards = document.querySelectorAll('.card_slider');
@@ -831,6 +767,29 @@ cards[figure].classList.remove('active');
 figure = (figure - 1 + cards.length) % cards.length;
 cards[figure].classList.add('active');
 }
+    </script>
+
+/*serviceprice slider*/
+<script>
+    var service = document.getElementById("servicePrice");
+    var serviceBox = service.getElementsByClassName("prices");
+    function btnnext(){
+        service.append(serviceBox[0]);
+    }
+    function btnprev(){
+        service.prepend(serviceBox[serviceBox.length - 1]);
+    }
+   </script>
+    /*review slider*/
+    <script>
+        var review = document.getElementById("reviewSlider");
+        var contentBox = review.getElementsByClassName("cleaning_rules");
+        function nxt(){
+            review.append(contentBox[0]);
+        }
+        function prv(){
+            review.prepend(contentBox[contentBox.length - 1]);
+        }
     </script>
     </body>
 </html>

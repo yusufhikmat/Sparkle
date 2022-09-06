@@ -38,56 +38,18 @@ body{
 .col-12{width: 100%;}
 
  /*pre_header*/
- div.pre_header{
-    background-color: #262626;
-    height:60px;
-    padding:10px 20px;
-    position: fixed;
-    width:100%;
-    z-index: 1;
-   
- }
-
- div.pre_header div.webname{
-    margin: 0;
-    padding-left: 25px;
-    font-size: 20px;
-    float:left;
- }
- .pre_header div.webname p{
-    color:white;
-    font-weight: 600px;
- }
- .pre_header div.webname span{
-    color:#82b440;
-    font-weight: 100px;
- }
- .pre_header div.btn{
-    float: right;
- }
- div button.btnbuy{
-    padding: 10px 25px;
-    color:white;
-    background-color: #82b440;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 #6f9a37;
-    border: none;
-    font-size: 16px;
- }
+ 
 
  /* header*/
  .postheader{
     display:flex;
     background-color: #fff; 
-    padding: 0px 4%;
+    padding: 0px 2%;
     width:100%;
-    padding-top: 5%;
+    
     
  }
- img.logo{
-    padding-left: 12%;
-    font-size: 100px;
- }
+
  .fontImages{
     display:flex;
     padding-left: 3%;
@@ -124,12 +86,13 @@ i.phone{
  nav{
     width: 100%;
     position:sticky;
-    top:60px;
+    top:0;
     height:50px;
-    z-index: 2;
+    z-index: 1000;
     display:flex;
     padding:0px 7%;
     background-color: #fff;
+    justify-content: space-between;
  }
  nav img.logo{display:none;}
  nav .navbar ul li{
@@ -180,10 +143,6 @@ nav label{
     display:none;
     font-size: 20px;
 }
-nav div.float_left{
-    position:relative; 
-    left:23%;
-}
 nav div.float_left i.fa{
     padding:0px 10px;
 }
@@ -199,9 +158,9 @@ nav div.float_left i.fa{
    
 }
 
-.dunno{
+.yellow_circle{
     padding-top: 38%;
-    padding-left:7%;
+    padding-left:15%;
     display:flex;
     animation:slideBox .2s linear .4s backwards;
     
@@ -225,8 +184,8 @@ nav div.float_left i.fa{
     font-size: 20px;
     font-weight:600;
     text-transform: uppercase;
-    right: 20%;
-    top:38%;
+    right: -7%;
+    top:33%;
     position: absolute;
     text-align: center;
    
@@ -237,18 +196,13 @@ nav div.float_left i.fa{
     font-weight: 800;
     font-size: 50px;
     text-transform: uppercase;
-    right: 30%;
-    top: 38%;
+    right: 5%;
+    top: 35%;
     position: absolute;
     text-align: center;
     
 }
-.onlinebtn{
-    top:67%;
-    right:45%;
-    position: absolute;
-    
-}
+
 .onlinebtn button{
     background-color: black;
     color:white;
@@ -258,117 +212,8 @@ nav div.float_left i.fa{
     text-transform: uppercase;
     margin:10px 0px;
 }
-.image_box{
-    position: absolute;
-    left:20%;
-}
-.shape{
-    padding-top:30%;
-    position:relative;
-}
-.circle{
-    height:150px;
-    width:150px;
-    border-radius: 50%;
-    border: 5px solid gold;
-    margin-left: 23%;
-    top:100px;
-    position: absolute;
-    background-color: #fff;
-    z-index: 1;
-}
-.square_box{
-    height:400px;
-    width:450px;
-    border: 10px solid gold;
-    position: absolute;
-    border-radius: 10px;
-    background-color: #fff;
-    
-}
-.shape{
-    animation:slideBox .2s linear .4s backwards;
-    left:0px;
-}
 
-@keyframes slideBox{
-    0%{
-        opacity:0;
-        transform: translateZ(-50px);
-    }
-}
-.second_box{
-    left:28%;
-    position: absolute;
-    top:17%;
-    text-transform: capitalize;
-    z-index: 2;
-    text-align: center;
-    
 
-}
-.second_box p{    
-    font-size: 20px;
-}
-.paragraph_service{
-    color:#3065b8;
-    font-weight: 600;
-}
-.negative_discount{
-    position: absolute;
-    text-align: center;
-    top:40%;
-    left:3%;
-    font-size: 20px;
-    line-height:2rem;
-    padding:0px 20px;
-
-}
-.negative_discount h3{
-    font-size: 50px;
-    color: #3065b8;
-    text-shadow: 0px 5px 10px 3px #3065b8;
-    font-weight: 800;
-    margin-bottom: 10%;
-    text-transform: uppercase;
-}
-.first_cleaning{
-    font-size: 25px;
-    color: #3065b8;
-    text-transform: capitalize;
-    font-weight: 600;
-    margin-bottom: 10%;
-}
-.star_rating{
-    color:goldenrod;
-    font-size: 50px;
-    margin-bottom: 12%;
-}
-.negative_discount button{
-    background-color: black;
-    color:white;
-    padding:15px 25px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border:none;
-    font-size: 16px;
-}
-.slide2_image{
-    padding-top: 20%;
-    height:900px;
-}
-.third_box{   
-    position: absolute;
-    padding-left: 30px;
-    animation:slideContent .2s linear .4s backwards;
-}
-
-@keyframes slideContent{
-    0%{
-        opacity:0;
-        transform: translateZ(-50px);
-    }
-}
 .cleaning_space{
     padding-top: 30%;
     font-size: 50px;
@@ -412,13 +257,17 @@ nav div.float_left i.fa{
     display: block;
   }
   .container .slide_container .slide{
-    background-image: url("contact.jpg");
+    background-image: url("https://noyon.me/html/homecleaner-preview/assets/images/banner/1.jpg");
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
     height:700px;
+
   }
   .container #prev,
   .container #next{
     position: absolute;
-    top:90%;
+    top:70%;
     transform: translateY(-50%);
     color:black;
     height:50px;
@@ -884,7 +733,7 @@ input[type='range']{
     position: absolute;
     top:50%;
     padding:5px;
-    right: 20px;
+    right: 200px;
     font-size: 16px;
 }
 /*admin_review_container*/
@@ -1027,7 +876,7 @@ p.content{
     padding: 20px 0px;
 }
 /*mobile responsiveness*/
-@media screen and (max-width:480px){
+@media screen and (max-width:680px){
     html,body{
         max-width: 100%;
         height:100%;
@@ -1040,22 +889,7 @@ p.content{
     .col-5{
         width:100%
     }
-    /*preheader*/
-    div.pre_header{
-        padding:5px 10px;
-        margin:0;
-        height:50px;
-        padding-top: 10px;
-        width:100%;
-    }
-    div.pre_header div.webname{
-        font-size: 16px;
-        padding-left: 0;
-    }
-    div.pre_header .btnbuy{
-        padding:5px 5px;
-        font-size: 14px;
-    }
+    
     /*postheader*/
     .postheader{
       display:none;   
@@ -1065,7 +899,7 @@ p.content{
     }
     /*navigation*/
     nav{
-        top:50px;
+        top:0px;
         padding:10px 5%;
         height:50px;
     }
@@ -1109,57 +943,65 @@ p.content{
         display:initial;
     }
     /*slider container*/
-    .first_container_content{
-        margin:0;
+    .container .slide_container .slide{
+        background-image: url("https://noyon.me/html/homecleaner-preview/assets/images/banner/1.jpg");
+        width:680px;
+        height: 300px;
+        background-size:contain;
+        background-repeat: no-repeat;
     }
-    .slide_container{
-        width:100%;
-        overflow: hidden;
-    }
-    .content_box{
-       height:300px;
-    }
-    
-    .dunno{
+    .yellow_circle{
         display:none;
+        padding:0;
     }
     .first_order{
-        font-size: 12px;
-        font-weight: 400;
-        left:0;
-        top:10%;
+        position:relative;
         text-align: left;
-
-    }
-    .first_order p{
-        display:inline;
+        top:5%;
+        left:10px;
+        font-size: 16px;
     }
     .discount{
+        position:relative;
+        top:5%;
+        left:10px;
         color:black;
-        font-size: 14px;
-        left:0;
-        top:15%;
-        font-size: 400;
+        font-size: 18px;
         text-align: left;
     }
     .onlinebtn{
-        top:40%;
-        left:0;
-    }
-    .onlinebtn button{
-        background-color: black;
-        color:white;
-        padding:7px 5px;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        margin:5px 0px;
-        font-size: 10px;
-    }
+    top:0%;
+    left:10px;
+    position: relative;
     
-    .first_sliderbtn{
-        display:none;
+}
+    .cleaning_space{
+        padding-top: 0%;
+        font-size: 20px;
     }
+    .creating_happy_face{
+        font-size: 25px;
+        
+    }
+    .btnblack{
+        padding:10px 10px;
+        font-size: 14px;
+    }
+    .btnblue{
+        padding:10px 10px;
+        font-size: 14px;
+    }
+    .container #prev,
+  .container #next{
+    top:30%;
+  }
+  .container #prev{
+    left:20px;
+  }
+  .container #next{
+    right:20px;
+  }
+  
     /*header*/
     header{
         padding: 15% 10px 0px 10px;
@@ -1425,6 +1267,14 @@ p.content{
     .footer_info p{
         padding: 0px;
         font-size: 14px;
+    }
+}
+@media screen and(max-width:380px){
+    .container .slide_container .slide{
+        background-image: url("https://noyon.me/html/homecleaner-preview/assets/images/banner/1.jpg");
+        width:380px;
+        background-size:contain;
+        background-repeat: no-repeat;
     }
 }
 
