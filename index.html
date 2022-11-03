@@ -146,8 +146,8 @@
                 </div>
                 
                  <div class="first_sliderbtn">
-                    <div id="prev" onclick="next()"> < </div>
-                    <div id="next" onclick="prev()"> > </div>
+                    <div id="prev" onclick="next()"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                    <div id="next" onclick="prev()"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                 </div>
                 </div>
         </div>
@@ -349,8 +349,12 @@
                     
                 </div>
                 <div class="col-3 four_images_btn">
-                    <button class="previous" onclick="previouser()"><</button>
-                    <button class="next" onclick="nexter()">></button>
+                    <button class="previous" onclick="previouser()">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="next" onclick="nexter()">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
             
@@ -432,8 +436,8 @@
                 </div>
                 </div> 
             </div> 
-                <div class="next" onclick="nexty()"> > </div>
-                <div class="prev" onclick="prevy()"> < </div>
+                <div class="next" onclick="nexty()"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                <div class="prev" onclick="prevy()"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
             </div> 
             <div class="nested_container">       
             <div class="nested_grid">
@@ -563,8 +567,12 @@
        </div>
        
        <div class="pricebtn">
-        <button class="previousbtn" onclick="btnprev()"> < </button>
-        <button class="nextbtn" onclick="btnnext()"> > </button>
+        <button class="previousbtn" onclick="btnprev()">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <button class="nextbtn" onclick="btnnext()">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
        </div>
        </div>
        </div>
@@ -637,8 +645,12 @@
             
             </div>
             <div class="btnrules">
-                <button class="prv" onclick="prv() "> < </button>
-                <button class="nxt" onclick="nxt()"> > </button>
+                <button class="prv" onclick="prv() ">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </button>
+                <button class="nxt" onclick="nxt()">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
                </div>
     </div>
    
@@ -711,85 +723,6 @@
         </div>
 
     </div>
-    <script type="text/javascript">
-        let slides = document.querySelectorAll('.slide_container');
-        let index = 0;
-
-//next function
-    function next(){
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-    }
-//prev function
-    function prev(){
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
-    }
-    </script>
-    //home cleaning card
-    <script>
-        var clean= document.getElementById("homeCleaningCards");
-        var item = clean.getElementsByClassName("main_card");
-        function after(){
-            clean.append(item[0]);
-        }
-        function before(){
-            clean.prepend(item[item.length - 1]);
-        }
-    </script>
-    /* imageslider*/
-    <script>
-        var imageSlider = document.getElementById("imageSlider");
-        var fourImages = imageSlider.getElementsByClassName("four_images");
-        function nexter(){
-            imageSlider.append(fourImages[0]);
-        }
-        function previouser(){
-            imageSlider.prepend(fourImages[fourImages.length - 1]);
-        }
-    </script>
-    <script>
-        /* grid card slider*/
-let cards = document.querySelectorAll('.card_slider');
-let figure = 0;
-
-//next function
-function nexty(){
-cards[figure].classList.remove('active');
-figure = (figure + 1) % cards.length;
-cards[figure].classList.add('active');
-}
-//prev function
-function prevy(){
-cards[figure].classList.remove('active');
-figure = (figure - 1 + cards.length) % cards.length;
-cards[figure].classList.add('active');
-}
-    </script>
-
-/*serviceprice slider*/
-<script>
-    var service = document.getElementById("servicePrice");
-    var serviceBox = service.getElementsByClassName("prices");
-    function btnnext(){
-        service.append(serviceBox[0]);
-    }
-    function btnprev(){
-        service.prepend(serviceBox[serviceBox.length - 1]);
-    }
-   </script>
-    /*review slider*/
-    <script>
-        var review = document.getElementById("reviewSlider");
-        var contentBox = review.getElementsByClassName("cleaning_rules");
-        function nxt(){
-            review.append(contentBox[0]);
-        }
-        function prv(){
-            review.prepend(contentBox[contentBox.length - 1]);
-        }
-    </script>
+    <script type="text/javascript" src="javascript/index.js"></script>
     </body>
 </html>

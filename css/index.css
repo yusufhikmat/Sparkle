@@ -142,6 +142,7 @@ i.phone{
 nav label{
     display:none;
     font-size: 20px;
+
 }
 nav div.float_left i.fa{
     padding:0px 10px;
@@ -907,7 +908,7 @@ p.content{
     nav label{
         display:initial;
         position:absolute; 
-        left:70%;   
+        left:60%;   
     }
     nav img.logo{
         display:initial;
@@ -993,7 +994,7 @@ p.content{
     }
     .container #prev,
   .container #next{
-    top:30%;
+    display:none;
   }
   .container #prev{
     left:20px;
